@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   deviation!:number|null;
+  noOfTries!:number;
   
   constructor(){}
 }
