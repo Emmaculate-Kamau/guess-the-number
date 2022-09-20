@@ -6,10 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  deviation!:number|null;
-  noOfTries!:number;
-  guess!:number;
-  original!:number;
-  
-  constructor(){}
+  deviation!: number | null;
+  noOfTries!: number;
+  guess!: number;
+  original!: number;
+
+  constructor() { }
 }
