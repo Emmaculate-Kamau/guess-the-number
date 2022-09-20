@@ -9,6 +9,7 @@ export class AppComponent {
   deviation!:number|null;
   noOfTries!:number;
   guess!:number;
+  original!:number;
   
   constructor(){}
 }
