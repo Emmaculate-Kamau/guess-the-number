@@ -7,4 +7,23 @@
       </p>
     </div>
   </div>
+  <div>
+    <label for="your Guess :"></label>
+    <input type="number" [value]="guess" (input)="guessInputValueChanges($event)" (keydown.enter)="verifyGuess()" />
+    <button (click)="verifyGuess()" class="btn btn-primary btn-sm">Verify</button>
+    <button (click)="initializeGame()" class="btn btn-warning btn-sm">Restart</button>
+  </div>
+
+  <div >
+    <div *ngIf="deviation!==null">
+      <p *ngIf="deviation < 0" class="alert alert-warning">Your guess is higher .</p>
+      <p *ngIf="deviation > 0 " class="alert alert-warning">Your guess is lower</p>
+      <p *ngIf="deviation===0" class="alert alert-success">Yes! That's it.</p>
+    </div>
+   
+    <button type="button" class="btn btn-primary">
+      No of guesses <span class="badge text-bg-secondary"> {{noOfTries}} </span>
+    </button>
+  
+  </div>
 </div>
